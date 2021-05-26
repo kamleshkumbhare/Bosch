@@ -1,0 +1,50 @@
+<div class="header-container">
+	<div class="main-menu">
+		<ul>
+			<!-- <li><a href="javascript:void(0)"><img src="../../assets/images/home-icon.png" class="img-responsive" /></a></li> -->
+			<li>
+				<a href="javascript:void(0)" [routerLink]="'/dashboard'">
+					<span class="icon"><img src="../../assets/images/dashboard-icon.svg" class="img-responsive" /></span>
+					<span class="text" >Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"[routerLink]="'/user'">
+					<span class="icon"><img src="../../assets/images/user-icon.svg" class="img-responsive" /></span>
+					<span class="text">Users</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"[routerLink]="'/threshold'">
+					<span class="icon"><img src="../../assets/images/threshold-icon.svg" class="img-responsive" /></span>
+					<span class="text">Threshold</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"[routerLink]="'/tripList'">
+					<span class="icon"><img src="../../assets/images/threshold-icon.svg" class="img-responsive" /></span>
+					<span class="text">Trips</span>
+				</a>
+			</li>
+			<li class="user">
+				<a href="javascript:void(0)">
+					<span class="icon"><img src="../../assets/images/user-img.png" class="img-responsive" /></span>
+					<span class="text">
+						<span> {{userName}} </span>
+						<span class="small-text">Track consignments with ease!</span>
+					</span>
+				</a>
+			</li>
+			<li class="signout">
+				<a href="javascript:void(0)" (click)="logout()">
+					<span class="icon"><img src="../../assets/images/logout.svg" class="img-responsive" /></span>
+					<span class="text">Signout</span>
+				</a>
+			</li>
+		</ul>
+		<div class="logo">
+			<a href="javascript:void(0)"><img src="../../assets/images/logo-small.svg" class="img-responsive" /></a>
+		</div>
+	</div>
+	<div class="menu-splitter"><img src="../../assets/images/menu-bg.svg" class="img-responsive" /></div>
+</div>

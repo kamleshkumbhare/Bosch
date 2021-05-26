@@ -1,0 +1,29 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "line-spin-fade" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+<div class="wrapper">
+	<div class="login-container">
+		<div class="container">
+			<div class="signIn-container">
+				<div class="content">
+					<div class="head">Sign In</div>
+					<div class="form-fields">
+						<label>Email</label>
+						<input type="text" placeholder="enter your email" [(ngModel)]="emailValue"  name="email" />
+						<div class="user-icon"><img src="/assets/images/user-icon.svg" class="img-responsive" /></div>
+					</div>
+					<div class="form-fields">
+						<label>Password</label>
+						<input type="password" placeholder="password"[(ngModel)]="passwordValue" name="password" />
+						<div class="lock-icon"><img src="/assets/images/lock-icon.svg" class="img-responsive" /></div>
+					</div>
+					<div class="form-fields">
+						<input type="submit" value="Login" (click) ="login()" class="submit" />
+					</div>
+				</div>
+			</div>
+
+			<div class="logo-section">
+				<div class="image"><img src="/assets/images/logo.svg" class="img-responsive" /></div>
+			</div>
+		</div>
+	</div>
+</div>

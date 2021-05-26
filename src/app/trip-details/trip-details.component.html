@@ -1,0 +1,37 @@
+<div class="wrapper">
+    <div class="inner-container">
+        <app-header></app-header>
+        <div class="middle-container">
+            <div class="table-layout w500">
+                <div class="table-topbg"><img src="../../assets/images/table-top-bg.svg" class="img-responsive" /></div>
+                <div class="heading">Trip Listing Screen</div>
+
+                <div class="search-box">
+                    <input type="text" name="search" placeholder="Search Trip ID or Package ID" value="0034 0658 7C96" />
+                    <span><img src="../../assets/images/search-icon.png" class="img-responsive"/> </span>
+                </div>
+
+                <div class="search-details">
+                    <span>Trip ID</span> {{userData ? userData.tripId : "Not Found"}}
+                </div>
+                <table>
+                    <tr class="thead">
+                        <th>Package ID</th>
+                        <th>Device ID</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    <tr *ngFor="let user of deviceList">
+                        <td>{{user.packageCode}}</td>
+                        <td>{{user.deviceCode}}</td>
+                        <td>
+                            <span class="action-btn">
+                                <img src="../../assets/images/xls-icon.png" class="img-responsive" (click)="getDeviceLogs(user)" />
+                                <img src="../../assets/images/pdf-icon.png" class="img-responsive" />
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

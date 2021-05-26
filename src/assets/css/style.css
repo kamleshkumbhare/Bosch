@@ -1,0 +1,480 @@
+::selection{
+    background:#000000;
+    color:#FFFFFF;
+}
+::-moz-selection{
+    background:#000000;
+    color:#FFFFFF;
+}
+*{
+    outline:none;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing:antialiased;
+}
+img{
+    -ms-interpolation-mode:bicubic;
+}
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4 {
+    margin:0;
+    padding:0;
+}
+a,
+a img{
+    text-decoration:none;
+    color:#ffffff;
+    outline:0 none;
+    border:0 none
+}
+.transition{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -khtml-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.5s ease
+}
+.img-responsive{
+    max-width:100%;
+    height:auto
+}
+a{
+    cursor:pointer;
+    display:inline-block;
+}
+img{vertical-align:middle}
+.no-margin{margin:0 !important;}
+.no-marginr{margin-right:0 !important;}
+.no-padding{padding:0 !important;}
+.no-border{border:0 none !important;}
+.clear{clear:both !important;}
+.hide{display:none !important;}
+.pull-left{float:left !important;}
+.pull-right{float:right !important;}
+.text-right{text-align:right !important;}
+.text-center{text-align:center !important;}
+.no-background{background:none !important}
+.bluebg{background:#00b0f0 !important}
+.heightauto{height:auto !important}
+.acenter{text-align:center !important}
+.p-20{padding:20px;}
+.w100 {width:100%;overflow:hidden;}
+.box-shadow{
+    -webkit-box-shadow:0px 35px 40px -40px rgba(153,153,153,0.6);
+    -moz-box-shadow:0px 35px 40px -40px rgba(153,153,153,0.6);
+    box-shadow:0px 35px 40px -40px rgba(153,153,153,0.6);
+    overflow:hidden;
+}
+.align-center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+}
+
+::-webkit-input-placeholder{
+    color:#185B90;
+    font-size:14px;
+    line-height:18px;
+    font-weight: 400;
+    font-family: 'Advent Pro', sans-serif;
+    letter-spacing:0.72;
+}
+::-moz-placeholder{
+    color:#185B90;
+    font-size:14px;
+    line-height:18px;
+    font-weight: 400;
+    font-family: 'Advent Pro', sans-serif;
+    letter-spacing:0.72;
+}
+:-ms-input-placeholder{
+    color:#185B90;
+    font-size:14px;
+    line-height:18px;
+    font-weight: 400;
+    font-family: 'Advent Pro', sans-serif;
+    letter-spacing:0.72;
+}
+:-moz-placeholder{
+    color:#185B90;
+    font-size:14px;
+    line-height:18px;
+    font-weight: 400;
+    font-family: 'Advent Pro', sans-serif;
+    letter-spacing:0.72;
+}
+body{
+    font-family: 'Advent Pro', sans-serif;
+    color:#999999;
+    font-size:16px;
+    font-weight:400;
+    font-style:normal;
+    background:#002D46;
+}
+
+.wrapper{
+    width:100%;
+    overflow:hidden;
+    background:#002D46;
+}
+.container{
+    max-width:1366px;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    padding:0px;
+    top: 0cm;
+    
+}
+.login-container{
+    background:url(../images/background-image.png) no-repeat center center / cover;
+    height:100vh;
+}
+.signIn-container,
+.logo-section{
+    width:50%;
+    float:right;
+    height:100vh;
+    position:relative;
+    
+    
+}
+.signIn-container .content{
+    background:none;
+    border:1px solid #184F7C;
+    width:350px;
+    padding:30px;
+    position:absolute;
+    top:36%;
+    transform:translate(-50%,-50%);
+}
+.signIn-container .content .head{
+    font-size:35px;
+    text-align:center;
+    color:#ffffff;
+    margin-bottom:70px;
+}
+.signIn-container .content .form-fields{
+    width:auto;
+    overflow:hidden;
+    margin-top:45px;
+    position:relative;
+}
+.signIn-container .content .form-fields label{
+    display:block;
+    color:#79ADCB;
+    font-size:14px;
+    font-weight:600;
+}
+.signIn-container .content .form-fields input{
+    background:none;
+    border:0 none;
+    border-bottom:1px solid #127EB1;
+    color:#ffffff;
+    width:100%;
+    padding:10px 25px 10px 0;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: larger;
+}
+.signIn-container .content .form-fields input.submit{
+    background:linear-gradient(#0071A6, #008ECD);
+    width:auto;
+    padding:8px 40px;
+    font-size:15px;
+    text-align:center;
+    color:#ffffff;
+    font-family: 'Advent Pro', sans-serif;
+    float:right;
+    cursor:pointer;
+}
+.logo-section .image{
+    width:475px;
+    margin:0 auto;
+    position:absolute;
+    right:-26.5%;
+    bottom:10px;
+    top: 11cm;
+}
+
+.signIn-container .content .form-fields .user-icon,
+.signIn-container .content .form-fields .lock-icon{
+    width:17px;
+    height:17px;
+    display:inline-block;
+    vertical-align:middle;
+    position:absolute;
+    bottom:13px;
+    z-index:1;
+    right:0px;
+    cursor:pointer;
+}
+
+.inner-container{
+    background:url(../images/inner-background.png) no-repeat center center / cover;
+    height:100vh;
+    overflow:auto;
+}
+.header-container{
+    height:80px;
+    background:linear-gradient(to right, #002D46, #004666);
+}
+.menu-splitter{
+    width:100%;
+    height:1px;
+    position:relative;
+    top:-15px;
+}
+.main-menu{
+    position:relative;
+}
+.main-menu ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+    height:80px;
+}
+.main-menu ul li{
+    float:left;
+    background:url(../images/menu-splitter.svg) no-repeat top right;
+}
+.main-menu ul li.signout{
+    background:0 none;
+}
+.main-menu ul li a{
+    display:inline-block;
+    padding:29px 31px;
+}
+.main-menu ul li.user a{
+    padding:20px 35px;
+}
+.main-menu ul li a .icon{
+    width:20px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:5px;
+}
+.main-menu ul li a .text{
+    display:inline-block;
+    vertical-align:middle;
+    color:#ffffff;
+    font-weight:400;    
+}
+.main-menu ul li.user a .icon{
+    width:40px;
+}
+.main-menu ul li.user a .text,
+.main-menu ul li.signout a .text{
+    color:#ffffff;
+}
+.main-menu ul li.user a .text span{
+    display:block;
+}
+.main-menu ul li.user a .text span.small-text{
+    font-size:12px;
+}
+.main-menu .logo{
+    position:absolute;
+    right:0;
+    top:40px;
+    width:225px;
+    z-index:1;
+}
+
+.middle-container{
+    overflow:hidden;
+    padding:85px 240px 85px 120px;
+}
+
+.middle-container .btn-section{
+    width:auto;
+    overflow:hidden;
+    text-align:right;
+    margin-bottom:30px;
+}
+.middle-container .btn-section a{
+    display:inline-block;
+    vertical-align:middle;
+}
+.middle-container .btn-section a .green-btn{
+    background:linear-gradient(#5EB26B, #26963E);
+    padding:5px 15px;
+    display:block;
+    border-radius:2px;
+}
+.table-layout{
+    background:#00A7FF0D;
+    border:1px solid #184F7C;
+    padding:30px;
+    position:relative;
+}
+.table-layout table{
+    border-collapse:collapse;
+    width:100%;
+}
+.table-layout table td, 
+.table-layout table th{
+  padding:10px 15px;
+  color:#ffffff;
+}
+.table-layout table tr{
+    border-bottom:4px solid #0C2133;
+}
+.table-layout table tr.thead{
+    border-bottom:10px solid #0C2133;
+}
+.table-layout table th{
+    background:#0D3B5C;
+    text-align:left;
+    font-weight:600;
+}
+.table-layout table td{
+    background:#082D44;
+    text-align:left;
+}
+.table-layout table tr:last-child{
+    border:0 none;
+}
+.table-layout table td img{
+    width:15px;
+    display:inline-block;
+    vertical-align:middle;
+}
+.table-layout table td.icon img{
+    margin-right:10px;
+}
+.table-layout table .action-btn img{
+    margin:0 5px;
+    display:inline-block;
+    vertical-align:middle;
+    cursor:pointer;
+}
+.table-layout .heading{
+    background:linear-gradient(#0085C1, #0085C1);
+    padding:5px 15px;
+    display:inline-block;
+    color:#ffffff;
+    position:absolute;
+    top:-16px;
+    border-radius:2px;
+}
+.table-topbg{
+    height:1px;
+    width:100%;
+    position:relative;
+    top:-41px;
+}
+.w500{
+    width:500px;
+    margin:0 auto;
+}
+.center{
+    text-align:center !important;
+}
+.search-box{
+    position:relative;
+    text-align:right;
+    margin-bottom:30px;
+}
+.search-box input{
+    background:none;
+    border:0 none;
+    border-bottom:1px solid #ffffff;
+    color:#e3e7eb;
+    width:60%;
+    padding:10px 25px 10px 0;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: larger;
+}
+.search-box span{
+    position:absolute;
+    top:5px;
+    right:0;
+    width:25px;
+    display:inline-block;
+}
+.search-details{
+    color:#ffffff;
+    text-align:center;
+    margin-bottom:30px;
+}
+.search-details span{
+    font-weight:600;
+    margin-right:20px;
+}
+.table-layout .form{
+    overflow:hidden;
+}
+.table-layout .form-fields{
+    width:calc(50% - 40px);
+    overflow:hidden;
+    position:relative;
+    float:left;
+    margin:20px;
+}
+.table-layout .form-fields label{
+    display:block;
+    color:#acdaf1;
+    font-size:14px;
+    font-weight:600;
+}
+.table-layout .form-fields input,
+.table-layout .form-fields select{
+    background:none;
+    border:0 none;
+    border-bottom:1px solid #127EB1;
+    color:#ffffff;
+    width:100%;
+    padding:10px 25px 10px 0;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: larger;
+}
+.table-layout .form-fields input.submit{
+    background:linear-gradient(#0071A6, #008ECD);
+    width:auto;
+    padding:8px 40px;
+    font-size:15px;
+    text-align:center;
+    color:#ffffff;
+    font-family: 'Advent Pro', sans-serif;
+    float:right;
+    cursor:pointer;
+}
+.table-layout .form-fields.w100{
+    width:calc(100% - 40px);
+}
+
+.table-layout .form.inline .form-fields label{
+    display:inline-block;
+    vertical-align:middle;
+    width:120px;
+}
+.table-layout .form.inline .form-fields input{
+    display:inline-block;
+    vertical-align:middle;
+    width:calc(100% - 180px);
+    border:1px solid #b9bdbf;
+}
+.table-layout .form.inline .form-fields span{
+    margin-left:10px;
+    color:#ffffff;
+    font-size: larger;
+}
+.table-layout .form.inline .form-fields span sup{
+    font-size:12px;
+}
+.mauto{
+    margin:0 auto !important;
+    float:none !important;
+}

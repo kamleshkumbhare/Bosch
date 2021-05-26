@@ -1,0 +1,37 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "line-spin-fade" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+<div class="wrapper">
+  	<div class="inner-container">
+		<app-header></app-header>
+		<div class="middle-container">
+  			<div class="table-layout w500">
+  				<div class="table-topbg"><img src="../../assets/images/table-top-bg.svg" class="img-responsive" /></div>
+				<div class="heading">Threshold</div>
+				<div class="form inline">
+  					<div class="form-fields w100">
+  						<label>Temperature (Max)</label>
+  						<input type="text" name="temperature" [(ngModel)]="tempValue"/>
+  						<span><sup>o</sup>C</span>
+					</div>
+					<div class="form-fields w100">
+  						<label>Humidity</label>
+  						<input type="text" name="humidity" [(ngModel)]="humidityValue"/>
+						<span>%</span>
+					</div>
+					<div class="form-fields w100">
+  						<label>Tilt (Max)</label>
+  						<input type="text" name="tilt" [(ngModel)]="tiltValue"/>							
+  						<span><sup>o</sup></span>
+					</div>
+					<div class="form-fields w100">
+  						<label>Shock (Max)</label>
+  						<input type="text" name="shock" [(ngModel)]="shockValue" />
+  						<span>g</span>
+					</div>				
+					<div class="form-fields w100 text-center">
+  						<input type="submit" value="Submit" class="submit mauto" (click) ="updateThreshold()" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

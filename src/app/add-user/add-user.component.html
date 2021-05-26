@@ -1,0 +1,48 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "line-spin-fade" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+
+<div class="wrapper">
+	<div class="inner-container">
+		<app-header></app-header>
+		<div class="middle-container">
+			<div class="table-layout">
+				<div class="table-topbg"><img src="../../assets/images/table-top-bg.svg" class="img-responsive" /></div>
+				<div class="heading">Create User</div>
+				<div class="form">
+					<div class="form-fields">
+						<label>First Name</label>
+						<input type="text" placeholder="enter your first name" name="fname" [(ngModel)]="fname" />
+					</div>
+					<div class="form-fields">
+						<label>Last Name</label>
+						<input type="text" placeholder="enter your last name" name="lname" [(ngModel)]="lname" />
+					</div>
+					<div class="form-fields">
+						<label>Email</label>
+						<input type="text" placeholder="enter your email name" name="email" [(ngModel)]="email" />
+					</div>
+					<div class="form-fields">
+						<label>Mobile</label>
+						<input type="text" placeholder="enter your mobile number" name="mobile" [(ngModel)]="mobile" />
+					</div>
+					<div class="form-fields">
+						<label>Role</label>
+						<select [(ngModel)]="role">
+							<option value="2" >Admin</option>
+							<option value="1" >User</option>
+						</select>
+					</div>
+					<div class="form-fields">
+						<label>Status</label>
+						<select [(ngModel)]="status">
+							<option value="true">Active</option>
+							<option value="false">InActive</option>
+						</select>
+					</div>						
+					<div class="form-fields w100">
+						<input type="submit" value="Submit" (click) ="addUser()" class="submit" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

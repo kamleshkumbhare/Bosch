@@ -1,0 +1,33 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "line-spin-fade" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+<div class="wrapper">
+    <div class="inner-container">
+        <app-header></app-header>
+        <div class="middle-container">				
+            <div class="table-layout w500">
+                <div class="table-topbg"><img src="assets/images/table-top-bg.svg" class="img-responsive" /></div>
+                <div class="heading">Trip Listing Screen</div>
+
+                <div class="search-box">
+                    <input type="text" name="search" placeholder="Search Trip ID or Package ID" [(ngModel)]="searchText" />
+                    <span (click)="search()"><img src="assets/images/search-icon.png" class="img-responsive" /></span>
+                </div>
+                <table>
+                    <tr class="thead">
+                        <th>Trip ID</th>
+                        <th class="center">Package Count</th>
+                    </tr>
+                    <tr *ngFor="let user of data">
+                        <style>
+                            td{
+                                cursor: pointer;
+                                margin: 15px 0;
+                            }
+                        </style>
+                        <td (click)="tripDetails(user)">{{user.tripCode}}</td>
+                        <td class="center">{{user.packageCount}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

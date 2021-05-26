@@ -1,0 +1,41 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "line-spin-fade" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+<div class="wrapper">
+  <div class="inner-container">
+    <app-header></app-header>
+    
+    <div class="middle-container">
+      <div class="btn-section">
+        <a href="javascript:void(0)">
+					<span class="green-btn" (click) ="addUser()">Create user</span>
+				</a>
+			</div>
+			<div class="table-layout">
+				<div class="table-topbg"><img src="../../assets/images/table-top-bg.svg" class="img-responsive" /></div>
+				<div class="heading">Our Users</div>
+				<table>
+					<tr class="thead">
+						<th>Name</th>
+						<th>Email</th>
+						<th>Mobile</th>
+						<th>Role</th>
+						<th>Status</th>
+						<th>&nbsp;</th>
+					</tr>
+					<tr *ngFor="let user of users">
+						<td>{{user.name}}</td>
+						<td>{{user.email}}</td>
+						<td>{{user.mobile}}</td>
+						<td>{{user.roleName}}</td>
+						<td class="icon"><img [src]="user.isActive ? '../../assets/images/check-icon.svg' : '../../assets/images/cancel-icon.svg'" class="img-responsive"/>{{user.isActive ? 'Active' : 'Inactive'}}</td>
+						<td>
+							<span class="action-btn">
+								<img src="../../assets/images/edit-icon.svg" class="img-responsive" (click) = "editUser(user)" *ngIf="user.isActive" />
+								<img src="../../assets/images/trash-icon.svg" class="img-responsive" (click) = "deleteUser(user.id)" *ngIf="user.isActive" />
+							</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
